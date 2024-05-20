@@ -9,9 +9,9 @@
 }
 
 :root {
-    --verdeOscuro: rgb(36, 99, 17);
-    --verdeMuyOscuro: rgb(36, 99, 17);
-    --verdeMuyOscuro: rgb(23, 65, 11);
+    --verdeOscuro: rgb(49, 137, 22);
+    --verdeMuyOscuro: rgb(35, 102, 14);
+    --verdeMuyOscuroN: rgb(23, 65, 11);
     --verdeMedio: rgb(74, 197, 37);
     --verdeClaro: rgb(140, 250, 107);
     --verdeMuyClaro: rgb(209, 255, 195);
@@ -21,6 +21,18 @@
     --naranjaOscuro: rgb(182, 126, 21);
     --amarillo: rgb(240, 244, 33);
     --lima: rgb(184, 231, 31);
+}
+
+a:visited {
+    color: var(--verdeMuyOscuro);
+}
+
+a {
+    color: var(--verdeMedio);
+  }
+
+a:hover {
+    color: var(--verdeOscuro);
 }
 
 h1, h2, h3, p {
@@ -33,14 +45,10 @@ h2 {
     font-size: 2rem;
 }
 h3 {
-    font-size: 1.75;
+    font-size: 1.85rem;
 }
 p {
     font-size: 1.5rem;
-}
-
-a:visited {
-    color: var(--verdeMuyOscuro);
 }
 
 button {
@@ -50,9 +58,11 @@ button {
     background-color: var(--verdeClaro);
     font-weight: bolder;
     transform: 250ms ease all;
+    margin: 1rem;
 }
 
 button:hover {
+    transform: 250ms ease all;
     background-color: var(--verdeMedio);
     color: var(--verdeMuyClaro);
 }
@@ -92,7 +102,77 @@ input {
 }
 
 
+/* CONTACTO */
 
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 4rem;
+    margin: 1rem;
+    transform: 500ms ease all;
+}
+
+.icon:hover {
+scale: 1.1;
+}
+
+.textarea {
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    min-width: 21rem;
+    min-height: 15rem;
+}
+
+.checkbox {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    width: 1.4rem;
+    height: 1.4rem;
+    appearance: none;
+    border: 3px solid var(--verdeOscuro);
+}
+
+.checkbox:checked {
+    background-color: var(--verdeMedio);
+  }
+
+
+  /* INCIDENCIAS */
+  
+.inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.imgFile {
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--verdeOscuro);
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    text-transform: uppercase;
+    transform: 250ms ease all;
+    margin: 1rem;
+    }
+.imgFile:hover {
+    background-color: var(--verdeMedio);
+    color: var(--verdeMuyClaro);
+}
 
 
 
@@ -100,7 +180,6 @@ input {
 
 .navbarStatic {
     background-color: var(--verdeClaro);
-/*     color: var(--verdeMuyClaro); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -127,6 +206,22 @@ input {
 
 .navbarUl:hover {
     color: white;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+	text-align:center;
+	font-family: Verdadna, Arial, Helvetica;
+	font-size:1.5rem;
+	height:2.7em;
+    color:var(--verdeOscuro);
+	text-transform:none;
+	font-weight:bold;
+    background-color: var(--verdeClaro);
 }
 
 /* MENU HAMBURGUESA */

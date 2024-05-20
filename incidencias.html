@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidencias</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/parques.html">Parques</a></li>
+                <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar -top"></div>
+            <div class="bar -mid"></div>
+            <div class="bar -bottom"></div>
+        </div>
+        <nav class="navbarStatic">
+            <ul class="navbarUl">
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/parques.html">Parques</a></li>
+                <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Reportar una incidencia</h1>
+            <p>Describa lo mejor posible y lo más detalladamente posible la incidencia que quiere reportar.</p>
+            <p>Si es posible, mande una imagen y la ubicación para agilizar el proceso.</p>
+            <p>Gracias.</p>
+            <div class="send-mensaje">
+
+                <form action="" method="get">
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" requiered/>
+
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_email" requiered/>
+
+                    <label for="telephon">Teléfono:</label>
+                    <input type="tel" id="telephon" name="user_telephon" requiered/>
+
+
+                    <label for="msg">Incidencia:</label>
+                    <textarea class="textarea" id="msg" name="user_message" requiered></textarea>
+
+                    <label class="imgFile" for="imgFile">Imagenes:</label>
+                    <input class="inputFile" type="file" accept="image/jpg image/png" id="imgFile" name="user_imgFile" multiple></input>
+
+                    <label>
+                        <input class="checkbox" type="checkbox" id="checkbox" required>
+                        Acepto las <a href="#">concidiones</a>
+                    </label>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+            </div>
+
+
+        <section class="contact-links">
+            <a href="https://github.com/A-Goffard" target="_blank"><img class="icon" src="/images/icons/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/aintzane-goffard-sevillano/" target="_blank"><img class="icon" src="/images/icons/linkedin.png" alt="linkedin"></a>
+            <a href="mailto:aintzagoffard@gmail.com"><img class="icon" src="/images/icons/mail.png" alt="mail"></a>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aintzane Goffard</p>
+    </footer>
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

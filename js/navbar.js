@@ -1,4 +1,4 @@
-// selector
+/* // selector
 var menu = document.querySelector('.hamburger');
 
 // method
@@ -9,4 +9,4 @@ function toggleMenu (event) {
 }
 
 // event
-menu.addEventListener('click', toggleMenu, false);
+menu.addEventListener('click', toggleMenu, false); */

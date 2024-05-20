@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen HTML CSS FORM</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/parques.html">Parques</a></li>
+                <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar -top"></div>
+            <div class="bar -mid"></div>
+            <div class="bar -bottom"></div>
+        </div>
+        <nav class="navbarStatic">
+            <ul class="navbarUl">
+                <li class="navbar-link"><a href="/index.html">Inicio</a></li>
+                <li class="navbar-link"><a href="/parques.html">Parques</a></li>
+                <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="logo" src="/images/NaturNet.png" alt="NaturNet">
+        <h1>NaturNet</h1>
+        <div class="formDiv">
+            <h2>Login</h2>
+
+            <form action="" method="get">
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" required/>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="user_password" required/>
+
+                <label>
+                    <input class="checkbox" type="checkbox" id="checkbox" required>
+                    Acepto las <a href="#">concidiones</a>
+                </label>
+
+                <button type="submit">Registrar</button>
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Aintzane Goffard</p>
+    </footer>
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

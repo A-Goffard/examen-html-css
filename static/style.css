@@ -72,6 +72,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-image: url('/images/background/4.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .logo {
@@ -358,4 +363,23 @@ footer {
 .navbar ul li a:hover{
   text-decoration:none;
   color:var(--verdeOscuro);
+}
+
+@media (max-width: 1199.98px) { 
+    
+
+
+}
+
+@media (max-width: 767.98px) { 
+    
+.navbarStatic {
+    display: none;
+}
+.hamburger {
+    display: block;
+}
+
+
+
 }

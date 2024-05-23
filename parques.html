@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parques</title>
+    <title>Parques de esparcimiento de Bizkaia y su información en tiempo real - Listado y situación</title>
+    <meta name="description" content="Información sobre el estado de ocupación de los parques de esparcimiento y zonas de parrilla en Bizkaia en tiempo real con información sobre las instalaciones, la meteorología y la localización">
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li class="navbar-link"><a href="/index.html">Inicio</a></li>
                 <li class="navbar-link"><a href="/parques.html">Parques</a></li>
                 <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
-                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            </ul>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            
+            </ul>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <div class="bar -top"></div>
             <div class="bar -mid"></div>
             <div class="bar -bottom"></div>
@@ -33,7 +35,7 @@
     <main>
         <img class="logo" src="/images/NaturNet.png" alt="NaturNet">
         <h1>Parques</h1>
-        <select name="select">
+        <select name="select" id="select">
             <option value="value1" selected>Akarlanda</option>
             <option value="value2">Aranguren</option>
             <option value="value3">Gorliz</option>
@@ -55,8 +57,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/1.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -66,8 +66,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/2.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -77,8 +75,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/3.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -88,8 +84,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/4.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -99,8 +93,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/5.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -110,8 +102,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/6.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -121,8 +111,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/7.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -132,8 +120,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/8.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -143,8 +129,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/9.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -154,8 +138,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/10.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -165,8 +147,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/11.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -176,8 +156,6 @@
                 <div class="fitxa-parke">
                     <img class="imgP" src="/images/parques/12.png" alt="">
                     <h3>Nombre del parque</h3>
-                    <p>Instalaciones:</p>
-                    <p>Lista de instalaciones</p>
                     <h3>Densidad de ocupación</h3>
                     <p>Datos de densidad</p>
                     <h3>Meteorología</h3>
@@ -191,5 +169,6 @@
         <p>&copy; 2024 Aintzane Goffard</p>
     </footer>
     <script src="/js/navbar.js"></script>
+    <script src="/js/select.js"></script>
 </body>
 </html>

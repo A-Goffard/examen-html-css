@@ -221,8 +221,11 @@ select {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
 }
 .detalle-texto{
+    margin: 1rem 5rem;
+    text-align: left;
     width: 60%;
 }
 .imagen-detalle {

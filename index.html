@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen HTML CSS FORM</title>
+    <title>Estado dinámico de los parques de esparcimiento de Bizkaia - Información general y ergistro</title>
+    <meta name="description" content="Registro para conocer el estado de ocupación de los parques de esparcimiento y zonas de parrilla en Bizkaia en tiempo real con información sobre las instalaciones, la meteorología y la localización">
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li class="navbar-link"><a href="/index.html">Inicio</a></li>
                 <li class="navbar-link"><a href="/parques.html">Parques</a></li>
                 <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
-                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            </ul>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            
+            </ul>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <div class="bar -top"></div>
             <div class="bar -mid"></div>
             <div class="bar -bottom"></div>
@@ -39,7 +41,7 @@
         <div class="formDiv">
             <h2>Regístrate</h2>
 
-            <form action="" method="get">
+            <form action="" id="register-form" method="get">
 
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="user_name" required/>
@@ -57,7 +59,7 @@
                 <input type="password" id="password" name="user_password" required/>
 
                 <label for="passwordC">Repite la contraseña:</label>
-                <input type="passwordC" id="passwordC" name="user_passwordC" required/>
+                <input type="password" id="passwordC" name="user_passwordC" required/>
 
                 <label>
                     <input class="checkbox" type="checkbox" id="checkbox" required>
@@ -79,5 +81,7 @@
         <p>&copy; 2024 Aintzane Goffard</p>
     </footer>
     <script src="/js/navbar.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

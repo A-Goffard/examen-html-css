@@ -8,14 +8,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li class="navbar-link"><a href="/index.html">Inicio</a></li>
                 <li class="navbar-link"><a href="/parques.html">Parques</a></li>
                 <li class="navbar-link"><a href="/incidencias.html">Incidencias</a></li>
-                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            </ul>
+                <li class="navbar-link"><a href="/contacto.html">Contacto</a></li>            
+            </ul>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <div class="bar -top"></div>
             <div class="bar -mid"></div>
             <div class="bar -bottom"></div>
@@ -33,7 +34,7 @@
     <main>
         <img class="logo" src="/images/NaturNet.png" alt="NaturNet">
         <h2>Parques</h2>
-        <select name="select">
+        <select name="select" id="select">
             <option value="value1">Akarlanda</option>
             <option value="value2" selected>Aranguren</option>
             <option value="value3">Gorliz</option>
@@ -49,7 +50,7 @@
         </select>
  
         <p>Seleciona el parque si quieres obtener más información</p>
-        <h1>Gorliz</h1>
+        <h1>Aranguren</h1>
             <div class="parque-detalle">
 
                 <div class="imagen-detalle">
@@ -78,5 +79,6 @@
         <p>&copy; 2024 Aintzane Goffard</p>
     </footer>
     <script src="/js/navbar.js"></script>
+    <script src="/js/select.js"></script>
 </body>
 </html>

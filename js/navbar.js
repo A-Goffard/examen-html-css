@@ -1,12 +1,14 @@
-/* // selector
-var menu = document.querySelector('.hamburger');
+// Menú hamburguesa
 
-// method
+let menu = document.getElementById('hamburger');
+
+menu.addEventListener('click', toggleMenu, false);
+
 function toggleMenu (event) {
-  this.classList.toggle('is-active');
-  document.querySelector( ".navbar" ).classList.toggle("is_active");
   event.preventDefault();
+  menu.classList.toggle('is-active');
+  document.getElementById( "navbar" ).classList.toggle("is_active");
+
 }
 
-// event
-menu.addEventListener('click', toggleMenu, false); */
+
